@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse and filter sample internship opportunities.">
+  <title>Internship Explorer | Find Your Next Opportunity</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#results">Skip to internship listings</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Internship Explorer home"><span class="brand-icon" aria-hidden="true">✦</span> Internship<span>Explorer</span></a><span class="header-badge">Student opportunities</span></div></header>
+  <main>
+    <section class="hero"><div class="container"><p class="eyebrow">YOUR CAREER STARTS HERE</p><h1>Find an internship that <em>fits you.</em></h1><p class="hero-copy">Explore opportunities across tech, design, marketing, and more. Find your next step in seconds.</p><div class="hero-stats"><span>✦ Curated sample listings</span><span>✓ Easy to explore</span></div></div></section>
+    <section class="container listings-section" aria-labelledby="browse-heading"><div class="section-top"><div><p class="eyebrow dark">EXPLORE OPPORTUNITIES</p><h2 id="browse-heading">Browse internships</h2></div><span class="results-count" id="resultCount" aria-live="polite">Loading internships…</span></div>
+      <form class="filters" id="filterForm" role="search"><div class="field search-field"><label for="searchInput">Search by role or company</label><div class="input-wrap"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="e.g. Python developer" autocomplete="off"></div></div><div class="field domain-field"><label for="domainSelect">Domain</label><select id="domainSelect"><option value="all">All domains</option></select></div><button type="reset" class="reset-btn" id="resetButton">Clear filters</button></form>
+      <div id="status" class="status" role="status" aria-live="polite"></div><div id="results" class="card-grid" tabindex="-1" aria-label="Internship results"></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span class="brand footer-brand">✦ Internship<span>Explorer</span></span><p>Made for learning • All listings are fictional examples.</p></div></footer>
+</body>
+</html>
